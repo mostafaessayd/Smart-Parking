@@ -32,19 +32,19 @@ public class DataBaseHandler {
     try {
         Statement stmt = conn.createStatement();
 
-        // تحقق مما إذا كان الاستعلام SELECT
+       
         if (req.trim().toUpperCase().startsWith("SELECT")) {
-            ResultSet rs = stmt.executeQuery(req); // executeQuery لـ SELECT
+            ResultSet rs = stmt.executeQuery(req);
             ResultSetMetaData meta = rs.getMetaData();
             int columnCount = meta.getColumnCount();
 
-            // طباعة أسماء الأعمدة
+            
             for (int i = 1; i <= columnCount; i++) {
                 System.out.print(meta.getColumnName(i) + "\t");
             }
             System.out.println("\n---------------------------------");
 
-            // طباعة البيانات
+            
             while (rs.next()) {
                 for (int i = 1; i <= columnCount; i++) {
                     System.out.print(rs.getString(i) + "\t");
