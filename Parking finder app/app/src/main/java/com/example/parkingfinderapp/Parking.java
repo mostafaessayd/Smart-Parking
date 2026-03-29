@@ -11,8 +11,17 @@ public class Parking {
         this.NumberOfPlacesAvailable = npa;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getNumberOfPlacesAvailable() {
+        return NumberOfPlacesAvailable;
+    }
+
     // Give directions from the current location to this parking space
     public void getWay() {
+        // write your code here
     }
 
     // Give the distance from the current location to this position
