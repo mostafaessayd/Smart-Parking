@@ -4,7 +4,8 @@ public class Parking {
     private String name;
     private String location;
     private int NumberOfPlacesAvailable;
-
+    private String mostafa;
+ 
     Parking(String name , String location , int npa) {
         this.name = name;
         this.location = location;
