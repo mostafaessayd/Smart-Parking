@@ -1,0 +1,3 @@
+parkings(id integer primary key auto increment , name varchar(50) , location varchar(200) , ipAdresse varchar(20) , numberOfPlaces integer)
+
+create table if not exists parkings(id integer primary key auto increment , name varchar(50) , location varchar(200) , ipAdresse varchar(20) , numberOfPlaces integer)
