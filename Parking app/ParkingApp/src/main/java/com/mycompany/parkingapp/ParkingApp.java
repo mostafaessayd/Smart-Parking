@@ -7,34 +7,32 @@ public class ParkingApp {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("💻 مشروع Arduino Uploader");
+        System.out.println("💻 Projet Arduino Uploader");
 
-        // إدخال مسار المشروع (المجلد الذي يحتوي على projet.ino)
-        System.out.print("أدخل مسار مشروع Arduino (مثال: projet): ");
-        String projectPath = input.nextLine().trim();
+        // Saisie du chemin du projet
+        String projectPath = "C:\\Users\\DZ Laptops\\Documents\\Arduino\\projet".trim();
 
-        // إدخال البورت الذي تتصل به اللوحة
-        System.out.print("أدخل البورت المتصل به Arduino (مثال: COM5): ");
-        String port = input.nextLine().trim();
+        // Saisie du port
+        String port = "COM5".trim();
 
-        // إنشاء الكائن
+        // Création de l'objet
         ArduinoUploader uploader = new ArduinoUploader(projectPath, port);
 
         try {
-            // رفع الكود
+            // Upload du code
             uploader.uploadProject();
 
-            System.out.println("✅ الكود أصبح على اللوحة.");
+            System.out.println("✅ Le code a été téléchargé sur la carte.");
 
-            // بعد رفع الكود، يمكننا التحكم في Arduino Serial إذا أردنا
-            System.out.println("يمكنك الآن التحكم باللوحة من Java باستخدام Serial.");
+            // Contrôle après upload
+            System.out.println("Vous pouvez maintenant contrôler la carte Arduino via Serial en Java.");
 
         } catch (Exception e) {
-            System.out.println("⚠️ حدث خطأ أثناء compile أو upload:");
+            System.out.println("⚠️ Une erreur s'est produite أثناء la compilation ou le téléchargement :");
             e.printStackTrace();
         }
 
         input.close();
-        System.out.println("تم الانتهاء من البرنامج.");
+        System.out.println("Fin du programme.");
     }
 }
