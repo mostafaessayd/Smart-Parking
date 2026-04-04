@@ -7,9 +7,9 @@
   },
   {
     "compile": {
-      "source_path": "C:\\Users\\DZ Laptops\\Desktop\\SMART PARKING\\Smart-Parking\\Parking app\\ParkingApp\\build\\sketch\\projet.ino.cpp",
-      "object_path": "C:\\Users\\DZ Laptops\\Desktop\\SMART PARKING\\Smart-Parking\\Parking app\\ParkingApp\\build\\sketch\\projet.ino.cpp.o",
-      "depfile_path": "C:\\Users\\DZ Laptops\\Desktop\\SMART PARKING\\Smart-Parking\\Parking app\\ParkingApp\\build\\sketch\\projet.ino.cpp.d"
+      "source_path": "C:\\Users\\DZ Laptops\\Desktop\\SMART PARKING\\Smart-Parking\\Parking app\\ParkingApp\\build\\sketch\\projet1.ino.cpp",
+      "object_path": "C:\\Users\\DZ Laptops\\Desktop\\SMART PARKING\\Smart-Parking\\Parking app\\ParkingApp\\build\\sketch\\projet1.ino.cpp.o",
+      "depfile_path": "C:\\Users\\DZ Laptops\\Desktop\\SMART PARKING\\Smart-Parking\\Parking app\\ParkingApp\\build\\sketch\\projet1.ino.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -38,7 +38,7 @@
         "-DARDUINO_ARCH_AVR",
         "-IC:\\Users\\DZ Laptops\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.7\\cores\\arduino",
         "-IC:\\Users\\DZ Laptops\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.7\\variants\\standard",
-        "C:\\Users\\DZ Laptops\\Desktop\\SMART PARKING\\Smart-Parking\\Parking app\\ParkingApp\\build\\sketch\\projet.ino.cpp",
+        "C:\\Users\\DZ Laptops\\Desktop\\SMART PARKING\\Smart-Parking\\Parking app\\ParkingApp\\build\\sketch\\projet1.ino.cpp",
         "-o",
         "nul"
       ]

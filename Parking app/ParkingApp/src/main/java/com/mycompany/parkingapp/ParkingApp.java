@@ -10,7 +10,7 @@ public class ParkingApp {
         System.out.println("💻 Projet Arduino Uploader");
 
         // Saisie du chemin du projet
-        String projectPath = "C:\\Users\\DZ Laptops\\Documents\\Arduino\\projet".trim();
+        String projectPath = "C:\\Users\\DZ Laptops\\Documents\\Arduino\\projet1".trim();
 
         // Saisie du port
         String port = "COM5".trim();
@@ -22,7 +22,7 @@ public class ParkingApp {
             // Upload du code
             uploader.uploadProject();
 
-            System.out.println("✅ Le code a été téléchargé sur la carte.");
+            System.out.println(" Le code a été téléchargé sur la carte.");
 
             // Contrôle après upload
             System.out.println("Vous pouvez maintenant contrôler la carte Arduino via Serial en Java.");
@@ -37,7 +37,7 @@ public class ParkingApp {
 
         try {
             ArduinoLogger logger = new ArduinoLogger("COM5");
-
+            Thread.sleep(2000);
             while (true) {
                 int occupied = logger.getOccupiedCount();
 
